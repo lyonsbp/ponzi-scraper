@@ -1,0 +1,18 @@
+{
+  "name": "howrare-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:scraper": "node scraper/index.js",
+    "start:downloader": "node downloader/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "puppeteer": "^12.0.1"
+  }
+}
