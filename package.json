@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:scraper": "node scraper/index.js",
+    "start:scraper:howrare": "node scraper/scrapeHowrare.js",
+    "start:scraper:moonrank": "node scraper/scrapeMoonRank.js",
     "start:downloader": "node downloader/index.js"
   },
   "keywords": [],
