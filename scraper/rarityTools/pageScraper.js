@@ -1,7 +1,7 @@
 const scraperObject = {
   url: "https://rarity.tools/mutant-ape-yacht-club",
   async scraper(browser) {
-    const collectionTotal = 16961;
+    const collectionTotal = 12000;
 
     let page = await browser.newPage();
     console.log(`Navigating to ${this.url}...`);
@@ -15,7 +15,7 @@ const scraperObject = {
     const [nextButon] = await page.$x("//div[contains(text(), 'Next >')]");
     while (allImageUrls.length < collectionTotal) {
       await new Promise(function (resolve) {
-        setTimeout(resolve, 7000);
+        setTimeout(resolve, 5000);
       });
       const imageUrls = await page.$$eval(
         "div.bgCard div.overflow-hidden a img",

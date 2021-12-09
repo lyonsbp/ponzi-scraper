@@ -9,7 +9,7 @@ async function scrapeAll(browserInstance) {
     await browser.close();
 
     fs.writeFile(
-      "./scraper/results/rarity-tools-data.json",
+      "./scraper/results/data.json",
       JSON.stringify(scrapedData),
       "utf8",
       function (err) {
