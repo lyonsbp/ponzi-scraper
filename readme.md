@@ -12,7 +12,7 @@ The downloader will read the json file ouput by the scraper, and download each i
 
 1. Install dependencies with `npm install`
 2. Open `./scraper/pageScraper.js` or `./scraper/moonrankScraper.js` and replace `url` with the url of the howrare collection to scrape
-3. Run `npm run start:scraper:howrare` or `npm run start:scraper:moonrank` to gather a list of all image urls.
+3. Run `npm run start:scraper:howrare` or `npm run start:scraper:moonrank` or `npm run start:scraper:rarity` to gather a list of all image urls.
    - The scraper should open a chromium window and navigate to each page. This process will take awhile because there needs to be a long delay to bypass the Cloudflare DDOS protection on the site. If you see the pages getting stuck on the cloudflare check, try raising the rest limit and try again.
    - For moonrank, the page will not auto-scroll. Manually scroll the page to trigger the infinite scroll.
 4. Run `npm run start:downloader` to download the images to `./images` folder.
